@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Albay | Inquiry</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/icon.png" alt="Albay Seal" style="width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--secondary);">
+      <span>Discover <span class="brand-gold">Albay</span></span>
+    </a>
+
+    <!-- Desktop menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Travel Tips</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-primary-custom" href="inquiry.html">Inquire Now</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="navbar-toggler d-lg-none" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu" aria-label="Open menu"
+      style="border:2px solid var(--secondary);border-radius:6px;padding:6px 10px;background:rgba(200,169,81,0.1);">
+      <span style="display:flex;flex-direction:column;gap:5px;padding:2px;">
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:16px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<!-- OFFCANVAS SIDE DRAWER -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Discover <span>Albay</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html"><span class="menu-icon">🏠</span> Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html"><span class="menu-icon">ℹ️</span> About</a></li>
+      <li class="nav-item"><a class="nav-link" href="destinations.html"><span class="menu-icon">📍</span> Destinations</a></li>
+      <li class="nav-item"><a class="nav-link" href="festivals.html"><span class="menu-icon">🎭</span> Festivals</a></li>
+      <li class="nav-item"><a class="nav-link" href="food.html"><span class="menu-icon">🍽️</span> Food</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="menu-icon">🖼️</span> Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="tips.html"><span class="menu-icon">💡</span> Travel Tips</a></li>
+    </ul>
+    <a href="inquiry.html" class="btn-primary-custom inquire-btn">Inquire Now</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Plan Your <span>Visit</span></h1>
+    <p>Send your inquiry and we’ll help you plan the best Albay itinerary based on your interests.</p>
+  </div>
+</section>
+
+<!-- INQUIRY FORM -->
+<section class="section form-section" style="padding-top:3rem;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="form-box" style="margin-bottom:3rem;">
+          <h2 class="section-title" style="margin-bottom:0.25rem;">Inquiry Form</h2>
+          <div class="section-line" style="margin-left:0"></div>
+          <p class="section-sub" style="margin-bottom:1.5rem; color:rgba(255,255,255,0.85)">
+            Fill out the details below. Required fields are validated automatically.
+          </p>
+
+          <form id="inquiryForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" autocomplete="name" />
+                <div id="errFullname" class="error-msg">Please enter your full name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" autocomplete="email" />
+                <div id="errEmail" class="error-msg">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contact" inputmode="numeric" />
+                <div id="errContact" class="error-msg">Contact number must contain numbers only (at least 7 digits).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="destination" class="form-label">Preferred Destination</label>
+                <select class="form-select" id="destination">
+                  <option value="" selected disabled>Select a destination</option>
+                </select>
+                <div id="errDest" class="error-msg">Please select a destination.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="travelDate" class="form-label">Travel Date</label>
+                <input type="date" class="form-control" id="travelDate" />
+                <div id="errDate" class="error-msg">Please select a travel date.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="visitors" class="form-label">Number of Visitors</label>
+                <input type="number" class="form-control" id="visitors" min="1" />
+                <div id="errVisitors" class="error-msg">Number of visitors must be at least 1.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message / Interests</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="e.g., family trip, hiking, beach + food tour, budget range, preferred schedule"></textarea>
+                <div id="errMessage" class="error-msg">Please enter a message (at least 5 characters).</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom" style="width:100%; max-width:280px;">Send Inquiry</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="formSuccess" class="form-success" aria-live="polite">
+            <div class="checkmark">✓</div>
+            <h3 style="color:var(--primary); margin-top:0.5rem;">Inquiry Sent!</h3>
+            <p style="color:rgba(0,0,0,0.65);">
+              This is a student project demo. In a real website, this would submit to a backend.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="footer-brand">Discover <span>Albay</span></div>
+        <p style="font-size:0.9rem">Your complete guide to exploring the Heart of Bicol — from volcanoes to beaches, ruins to festivals.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Quick Links</h6>
+        <ul class="list-unstyled" style="font-size:0.9rem">
+          <li><a href="about.html">About Albay</a></li>
+          <li><a href="destinations.html">Tourist Destinations</a></li>
+          <li><a href="festivals.html">Festivals & Culture</a></li>
+          <li><a href="food.html">Food & Delicacies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="tips.html">Travel Tips</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Contact</h6>
+        <p style="font-size:0.9rem">
+          📍 Albay, Bicol Region, Philippines<br>
+          📧 xanderlauron543@gmail.com<br>
+          📞 +63 XXX XXX XXXX
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom text-center">© 2025 Discover Albay. A student tourism website project.</div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

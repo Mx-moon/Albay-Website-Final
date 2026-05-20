@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Albay | Festivals & Culture</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/icon.png" alt="Albay Seal" style="width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--secondary);">
+      <span>Discover <span class="brand-gold">Albay</span></span>
+    </a>
+
+    <!-- Desktop menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Travel Tips</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-primary-custom" href="inquiry.html">Inquire Now</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="navbar-toggler d-lg-none" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu" aria-label="Open menu"
+      style="border:2px solid var(--secondary);border-radius:6px;padding:6px 10px;background:rgba(200,169,81,0.1);">
+      <span style="display:flex;flex-direction:column;gap:5px;padding:2px;">
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:16px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<!-- OFFCANVAS SIDE DRAWER -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Discover <span>Albay</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html"><span class="menu-icon">🏠</span> Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html"><span class="menu-icon">ℹ️</span> About</a></li>
+      <li class="nav-item"><a class="nav-link" href="destinations.html"><span class="menu-icon">📍</span> Destinations</a></li>
+      <li class="nav-item"><a class="nav-link active" href="festivals.html"><span class="menu-icon">🎭</span> Festivals</a></li>
+      <li class="nav-item"><a class="nav-link" href="food.html"><span class="menu-icon">🍽️</span> Food</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="menu-icon">🖼️</span> Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="tips.html"><span class="menu-icon">💡</span> Travel Tips</a></li>
+    </ul>
+    <a href="inquiry.html" class="btn-primary-custom inquire-btn">Inquire Now</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Festivals & <span>Culture</span></h1>
+    <p>Celebrate the vibrant spirit, ancient traditions, and colorful festivals that define Albay's rich cultural identity.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="section-title">The <span>Bicolano</span> Spirit</div>
+        <div class="section-line mx-auto"></div>
+        <p style="color:#444;line-height:1.8;font-size:1.05rem">
+          The people of Albay are Bicolanos — known throughout the Philippines for their warmth, humor, resilience, and deep faith. Their culture is a beautiful blend of indigenous Bicolano traditions, centuries of Spanish Catholic influence, and a modern provincial identity anchored by one of nature's most dramatic landmarks: Mayon Volcano.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-title">Major <span>Festivals</span></div>
+      <div class="section-line mx-auto"></div>
+    </div>
+    <div class="row g-4">
+
+      <!-- Festival 1: Ibalong -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+          <img src="img/ibalong.jpg"
+            alt="Ibalong Festival">
+          <div class="festival-card-body">
+            <span class="festival-month">August</span>
+            <h4>Ibalong Festival</h4>
+            <div class="festival-loc">📍 Legazpi City, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              The Ibalong Festival is Albay's grandest annual celebration, held every August in Legazpi City. It draws inspiration from the ancient Bicolano epic poem "Ibalong" — a mythological narrative featuring legendary heroes like Baltog, Handyong, and Bantong who battled monsters and shaped the Bicol landscape. The festival features colorful street dancing, elaborately costumed performers, float parades, cultural shows, food fairs, and trade exhibits. It is one of the most visually spectacular festivals in the Bicol region and a must-see for visitors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festival 2: Magayon -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+<img src="img/magayon.jpg"
+            alt="Magayon Festival">
+          <div class="festival-card-body">
+            <span class="festival-month">May</span>
+            <h4>Magayon Festival</h4>
+            <div class="festival-loc">📍 Legazpi City, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              The Magayon Festival is celebrated throughout the entire month of May and is considered the province-wide tourism festival of Albay. "Magayon" means beautiful in Bicolano — a fitting name for a festival that celebrates the natural and cultural beauty of the province. The month-long event includes trade fairs, cultural presentations, sports competitions, concerts, food festivals, and the Miss Magayon pageant. Each municipality of Albay participates with their own local celebrations and pride.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festival 3: Feast of Our Lady of Penafrancia (Peregrinacion) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+          <img src="img/daragan.jpg"
+            alt="Fiesta de San Rafael">
+          <div class="festival-card-body">
+            <span class="festival-month">October</span>
+            <h4>Patron Saint Fiestas</h4>
+            <div class="festival-loc">📍 Various municipalities, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              Every municipality and barangay in Albay holds an annual fiesta in honor of its patron saint. These local celebrations are deeply rooted in Catholic tradition and are an important part of Bicolano community life. Visitors can experience authentic local festivities including processions, novenas, street dances, traditional games, and communal feasting. Daraga celebrates its Patron Saint feast with a particularly vibrant celebration involving the historic Daraga Church.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festival 4: Tabako Festival -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+          <img src="img/tabako.jpg"
+            alt="Tabako Festival">
+          <div class="festival-card-body">
+            <span class="festival-month">September</span>
+            <h4>Tabako Festival</h4>
+            <div class="festival-loc">📍 Tabaco City, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              The Tabako Festival in Tabaco City celebrates the city's identity and economic strengths, particularly its knife-making and agricultural industries. The festival features cultural street dances, trade exhibits, food showcases, and local sports events. It is a proud celebration of Tabaco City's unique contributions to Albay's culture and economy, and a great opportunity for visitors to experience a more local, community-oriented festival.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festival 5: Ligao Fiesta -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+          <img src="img/ligaocity.jpg"
+            alt="Ligao Fiesta">
+          <div class="festival-card-body">
+            <span class="festival-month">January</span>
+            <h4>Ligao City Fiesta</h4>
+            <div class="festival-loc">📍 Ligao City, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              Ligao City celebrates its charter anniversary and patron saint's feast with a citywide festival featuring cultural performances, agri-tourism showcases, local delicacies exhibits, and family-oriented activities. Ligao City, known for its peaceful rural environment and proximity to natural attractions, uses its fiesta to highlight eco-tourism and sustainable agricultural practices unique to the area.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festival 6: Cagsawa Ruins Heritage Event -->
+      <div class="col-md-6 col-lg-4">
+        <div class="festival-card">
+          <img src="img/cagsawafes.jpg"
+            alt="Heritage Day Cagsawa">
+          <div class="festival-card-body">
+            <span class="festival-month">February</span>
+            <h4>Cagsawa Heritage Day</h4>
+            <div class="festival-loc">📍 Daraga, Albay</div>
+            <p style="font-size:0.92rem;color:#444;line-height:1.7">
+              Every February, the town of Daraga commemorates the victims of the 1814 Mayon Volcano eruption that destroyed the Cagsawa Church. The commemorative event includes mass offerings, cultural programs, heritage tours, and educational activities at the Cagsawa Ruins Park. It is a solemn yet meaningful event that honors the memory of the community lost to the volcano and acknowledges the resilience of the Bicolano people.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CULTURAL ELEMENTS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-title">Cultural <span>Heritage</span></div>
+      <div class="section-line mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 text-center rounded h-100" style="border:2px solid var(--light)">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem">🗣️</div>
+          <h6 style="color:var(--primary);font-weight:700">Bikolano Language</h6>
+          <p style="font-size:0.88rem;color:var(--gray)">The Bikol language is spoken across the region, with various dialects in different municipalities. It is known for its musical rhythm and expressive vocabulary.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 text-center rounded h-100" style="border:2px solid var(--light)">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem">⛪</div>
+          <h6 style="color:var(--primary);font-weight:700">Colonial Churches</h6>
+          <p style="font-size:0.88rem;color:var(--gray)">Beautiful Spanish-era churches in Daraga, Camalig, and throughout Albay stand as testament to centuries of Catholic faith and colonial architecture.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 text-center rounded h-100" style="border:2px solid var(--light)">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem">🧵</div>
+          <h6 style="color:var(--primary);font-weight:700">Traditional Crafts</h6>
+          <p style="font-size:0.88rem;color:var(--gray)">Abaca weaving, buri (palm leaf) products, pottery, and knife-making in Tabaco City are traditional crafts still practiced by local artisans.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 text-center rounded h-100" style="border:2px solid var(--light)">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem">🎭</div>
+          <h6 style="color:var(--primary);font-weight:700">Ibalong Epic</h6>
+          <p style="font-size:0.88rem;color:var(--gray)">The ancient Bicolano epic poem that narrates the mythological history of the Bicol Peninsula, featuring heroes like Baltog and Handyong who shaped the land.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="footer-brand">Discover <span>Albay</span></div>
+        <p style="font-size:0.9rem">Your complete guide to exploring the Heart of Bicol.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Quick Links</h6>
+        <ul class="list-unstyled" style="font-size:0.9rem">
+          <li><a href="about.html">About Albay</a></li>
+          <li><a href="destinations.html">Tourist Destinations</a></li>
+          <li><a href="festivals.html">Festivals & Culture</a></li>
+          <li><a href="food.html">Food & Delicacies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Contact</h6>
+        <p style="font-size:0.9rem">📍 Albay, Bicol Region, Philippines<br>📧 xanderlauron543@gmail.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom text-center">© 2025 Discover Albay. A student tourism website project.</div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

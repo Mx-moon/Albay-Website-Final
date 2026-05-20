@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Albay | Food & Delicacies</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/icon.png" alt="Albay Seal" style="width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--secondary);">
+      <span>Discover <span class="brand-gold">Albay</span></span>
+    </a>
+
+    <!-- Desktop menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link active" href="food.html">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Travel Tips</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-primary-custom" href="inquiry.html">Inquire Now</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="navbar-toggler d-lg-none" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu" aria-label="Open menu"
+      style="border:2px solid var(--secondary);border-radius:6px;padding:6px 10px;background:rgba(200,169,81,0.1);">
+      <span style="display:flex;flex-direction:column;gap:5px;padding:2px;">
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:22px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+        <span style="display:block;width:16px;height:2px;background:var(--secondary);border-radius:2px;"></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<!-- OFFCANVAS SIDE DRAWER -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Discover <span>Albay</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html"><span class="menu-icon">🏠</span> Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html"><span class="menu-icon">ℹ️</span> About</a></li>
+      <li class="nav-item"><a class="nav-link" href="destinations.html"><span class="menu-icon">📍</span> Destinations</a></li>
+      <li class="nav-item"><a class="nav-link" href="festivals.html"><span class="menu-icon">🎭</span> Festivals</a></li>
+      <li class="nav-item"><a class="nav-link active" href="food.html"><span class="menu-icon">🍽️</span> Food</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="menu-icon">🖼️</span> Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="tips.html"><span class="menu-icon">💡</span> Travel Tips</a></li>
+    </ul>
+    <a href="inquiry.html" class="btn-primary-custom inquire-btn">Inquire Now</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Food & <span>Delicacies</span></h1>
+    <p>Taste the bold, spicy, and unforgettable flavors that make Bicolano cuisine legendary across the Philippines.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="section-title">The <span>Flavors</span> of Albay</div>
+        <div class="section-line mx-auto"></div>
+        <p style="color:#444;line-height:1.8;font-size:1.05rem">
+          Bicolano cuisine is among the most distinctive and flavorful in all of the Philippines. Known for its bold use of chili peppers (sili) and coconut milk (gata), the food of Albay reflects the personality of its people — warm, spirited, and full of character. From fiery main dishes to sweet native delicacies, every meal in Albay is an experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD ITEMS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-title">Must-Try <span>Local Foods</span></div>
+      <div class="section-line mx-auto"></div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/cat1.jpg"
+            alt="Bicol Express"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Bicol Express</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">The most famous dish of the Bicol region. Sliced pork cooked in a rich coconut milk sauce with generous amounts of red and green sili (chili peppers). It is fiery, creamy, and utterly addictive. A true representation of Bicolano boldness in cuisine.</p>
+            <div class="where">📍 Where to Try: 1st Colonial Grill, Small Talk Café, most local restaurants in Legazpi City</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/cat4.jpg"
+            alt="Laing"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Laing (Natong)</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">Dried taro leaves cooked slowly in coconut milk until the leaves are tender and the sauce is thick and fragrant. Often made spicy with chili and savory with shrimp paste. Laing is a Bicolano staple and one of the most beloved dishes in the region.</p>
+            <div class="where">📍 Where to Try: 1st Colonial Grill, local carinderias throughout Albay</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/local6.jpg"
+            alt="Pinangat"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Pinangat</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">A unique dish from Camarines Sur and Albay where fish, pork, or shrimp is wrapped in taro leaves and cooked in coconut milk with chili and other aromatics. The leaf wrapping creates a delicious, concentrated flavor. Often served as a specialty "pasalubong" item from Albay.</p>
+            <div class="where">📍 Where to Try: Bicolano Food House, local specialty stores in Legazpi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/local4.jpg"
+            alt="Sili Ice Cream"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Sili Ice Cream</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">Possibly the most unique frozen treat in the Philippines. Sili (chili) ice cream is a beloved Albay invention — sweet and cold at first, then gradually building heat as the chili kicks in. It is a novelty you absolutely must try when visiting Legazpi.</p>
+            <div class="where">📍 Where to Try: 1st Colonial Grill — the originator of sili ice cream in Albay</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/local5.png"
+            alt="Tinutungang Manok"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Tinutungang Manok</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">Chicken cooked in a distinctive smoked coconut milk (tinutong na gata). The coconut is toasted until dark before being pressed into milk, giving the dish a deep, smoky, and nutty flavor profile that is completely unique to Bicol cuisine. Rich and comforting.</p>
+            <div class="where">📍 Where to Try: Local restaurants and carinderias in Legazpi and Daraga</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/seafood4.jpg"
+            alt="Kinunot na Pagi"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Kinunot na Pagi</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">Shredded stingray (pagi) meat cooked in coconut milk and malunggay (moringa) leaves. The stingray's unique texture becomes wonderfully tender in this dish, and the coconut-malunggay combination is a classic Bicol pairing. A truly regional specialty that is hard to find outside of Albay.</p>
+            <div class="where">📍 Where to Try: 1st Colonial Grill, specialty Bicolano restaurants in Legazpi City</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/pili nut.webp"
+            alt="Pili Nut Delicacies"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Pili Nut Delicacies</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">The pili tree is native to the Philippines and thrives in Bicol's volcanic soil. Pili nuts are used to make a variety of delicacies: sugared pili, pili brittle, pili cookies, and pili-filled candies. These are among the most popular pasalubong (souvenir gifts) brought home from Albay.</p>
+            <div class="where">📍 Where to Try / Buy: Delicacy shops in Legazpi City, souvenir stores at the airport</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <img src="img/local.jpg"
+            alt="Bringhe"
+            style="height:200px;object-fit:cover;width:100%">
+          <div class="food-card-body">
+            <h5>Bringhe</h5>
+            <p style="font-size:0.9rem;color:#444;line-height:1.7">A festive Bicolano rice dish made with glutinous rice and coconut milk, cooked in banana leaves and flavored with turmeric (giving it a golden color). It is traditionally served during fiestas and special celebrations. Bringhe has a dense, sticky texture and a subtle coconut-turmeric aroma.</p>
+            <div class="where">📍 Where to Try: Local fiestas, home-cooked meals, and some Bicolano restaurants</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DINING TIPS -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">Dining <span>Tips</span></div>
+        <div class="section-line mx-auto mb-4"></div>
+        <div class="tip-card mb-3" style="height:auto">
+          <div class="tip-num">🌶️</div>
+
+          <h5>Spice Level Warning</h5>
+          <p>Bicol food can be very spicy. If you have a low tolerance for heat, always ask the restaurant to adjust the spice level — most places can make milder versions of their dishes.</p>
+        </div>
+        <div class="tip-card mb-3" style="height:auto">
+          <div class="tip-num">💰</div>
+
+          <h5>Budget-Friendly Options</h5>
+          <p>Local eateries (carinderias) serve authentic Bicolano food at very affordable prices — usually ₱30 to ₱150 per dish. 1st Colonial Grill is the go-to spot for a full Bicolano food experience.</p>
+        </div>
+        <div class="tip-card" style="height:auto">
+          <div class="tip-num">🎁</div>
+
+          <h5>Pasalubong (Souvenir Food)</h5>
+          <p>Bring home pili nut products, pinangat, and native delicacies as souvenirs. Many shops near the airport and city center specialize in these packaged local treats.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="footer-brand">Discover <span>Albay</span></div>
+        <p style="font-size:0.9rem">Your complete guide to exploring the Heart of Bicol.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Quick Links</h6>
+        <ul class="list-unstyled" style="font-size:0.9rem">
+          <li><a href="about.html">About Albay</a></li>
+          <li><a href="destinations.html">Tourist Destinations</a></li>
+          <li><a href="festivals.html">Festivals & Culture</a></li>
+          <li><a href="food.html">Food & Delicacies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color:#fff;margin-bottom:1rem">Contact</h6>
+        <p style="font-size:0.9rem">📍 Albay, Bicol Region, Philippines<br>📧 xanderlauron543@gmail.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom text-center">© 2025 Discover Albay. A student tourism website project.</div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
